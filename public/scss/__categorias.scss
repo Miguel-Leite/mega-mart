@@ -1,0 +1,22 @@
+.box-categorias {
+  margin-top: 4.5rem;
+
+  .card-title {
+    text-align: center;
+  }
+
+  .card-body {
+    p {
+      a {
+        padding: 5px 10px;
+        background-color: $text-primary;
+        color: $text-one;
+        border-radius: 3px;
+      }
+    }
+  }
+
+  img {
+    height: 354px !important;
+  }
+}

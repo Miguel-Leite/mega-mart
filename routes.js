@@ -79,4 +79,8 @@ routes.get('/smartwatchs', (request, response) => {
   return response.render('home/smartwatchs')
 })
 
+routes.get('/mouses', (request, response) => {
+  return response.render('home/mouses')
+})
+
 module.exports = routes

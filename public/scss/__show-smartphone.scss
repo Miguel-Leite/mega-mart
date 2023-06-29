@@ -82,6 +82,12 @@
 
   .gallery-smartphone {
     margin-bottom: 3rem;
+
+    img {
+      width: 330px !important;
+      height: 330px !important;
+      background-size: cover;
+    }
   }
 
   .categorias-produtos {
