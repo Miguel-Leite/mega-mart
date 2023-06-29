@@ -1,0 +1,88 @@
+.box-footer {
+  margin-top: 5rem;
+  background-color: $text-primary;
+  color: $text-one;
+
+  .box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    font-size: 14px;
+
+    .contact {
+      margin-top: 4rem;
+
+      h1.title {
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+      }
+
+      h4 {
+        font-size: 15px;
+      }
+
+      .apps {
+        img {
+          width: 120px;
+          height: 40px;
+          cursor: pointer;
+        }
+      }
+
+      ul {
+        a {
+          color: $text-one;
+        }
+      }
+    }
+
+    .categorias {
+      margin-top: 5rem;
+
+      ul {
+
+        li {
+          list-style: circle;
+          margin: 15px 0;
+        }
+      }
+
+      a {
+        color: $text-one;
+      }
+    }
+  }
+
+  .line-division {
+    margin: 1rem auto;
+    width: 90%;
+    border-top: 1px solid $bg-second;
+  }
+
+  .services {
+    margin-top: 5rem;
+    
+    ul {
+
+      li {
+        list-style: circle;
+        margin: 15px 0;
+      }
+
+      a {
+        color: $text-one;
+      }
+    }
+  }
+
+  .direitos-reservados {
+    margin-top: 1.5rem;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}

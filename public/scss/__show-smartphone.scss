@@ -86,7 +86,31 @@
 
   .categorias-produtos {
     .box {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      align-items: center;
+      text-align: center;
+
+      p {
+        font-weight: 500;
+        margin-top: 5px;
+      } 
       
+      img {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all .1s;
+
+        &.active {
+          border: 2px solid $text-primary;
+        }
+
+        &:hover {
+          border: 2px solid $text-primary;
+        }
+      }
     }
   }
 }

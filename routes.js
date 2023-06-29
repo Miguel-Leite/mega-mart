@@ -34,6 +34,18 @@ routes.get('/categorias', (request, response) => {
   return response.render('home/categorias')
 })
 
+routes.get('/about', (request, response) => {
+  return response.render('about')
+})
+
+routes.get('/terms-conditions', (request, response) => {
+  return response.render('terms')
+})
+
+routes.get('/polityc', (request, response) => {
+  return response.render('polityc')
+})
+
 // acessos as categorias
 routes.get('/casa', (request, response) => {
   return response.render('home/casa')
