@@ -1,0 +1,92 @@
+.show-smartphone {
+  margin-top: 3.5rem;
+  
+  .show-title {
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h3 {
+        font-size: 15pt;
+        font-weight: bold;
+        color: $text-second;
+
+        span {
+          color: $text-primary;
+        }
+      }
+
+      div.more {
+        display: flex;
+        font-size: 13pt;
+
+        h6 {
+          cursor: pointer;
+          color: $text-second;
+          margin-right: 8px;
+          font-weight: bold;
+        }
+
+        i {
+          font-weight: bolder;
+          margin-top: 1px;
+          color: $text-primary;
+        }
+      }
+    }
+
+    .line-decoration {
+      width: 100%;
+      margin-top: 0.5rem;
+      margin-bottom: 2rem;
+      padding: 1px;
+      border-top: 1px solid $bg-final;
+      border-radius: 2px;
+      position: relative;
+
+      .line-blue {
+        width: 27%;
+        border-top: 3px solid $text-primary;
+        border-radius: 5px;
+        position: absolute;
+        top: -3px;
+        left: 0;
+      }
+    }
+  }
+
+  .info {
+    .price {
+      display: flex !important;
+      justify-content: space-around;
+      gap: 2px;
+
+      .price-deprecated {
+        text-decoration: line-through;
+      }
+
+      .carrinho {
+        .add-cart {
+          padding: 10px;
+          color: $text-one;
+          background-color: $text-primary;
+          font-weight: bold;
+          border-radius: 4px;
+          border: none;
+        }
+      }
+    }
+  }
+
+  .gallery-smartphone {
+    margin-bottom: 3rem;
+  }
+
+  .categorias-produtos {
+    .box {
+      
+    }
+  }
+}

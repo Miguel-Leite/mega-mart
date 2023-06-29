@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/App.css">
+
+  {% block head %}
+    <title>home</title>
+  {% endblock %}
+</head>
+<body>
+  <div class="box-menu">
+    <!-- menu no top -->
+    <div class="container container-xl">
+      <div class="box">
+        <div>
+          <h5 class="title"><a href="/">Seja bem vindo a MegaMart!</a></h5>
+        </div>
+
+        <div>
+          <ul class="items-menu">
+            <li>
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <a href="/location">Localização</a>
+              <span>|</span>
+            </li>
+
+            <li>
+              <i class="fa fa-truck" aria-hidden="true"></i>
+              <a href="/encomendas">Faça encomendas</a>
+              <span>|</span>
+            </li>
+
+            <li>
+              <i class="fa fa-gift" aria-hidden="true"></i>
+              <a href="/brindes">Brindes</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div><!-- end box-menu -->
+  
+  {% block content %}
+  {% endblock %}
+
+  <footer class="container">
+  </footer>
+
+  <script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="bootstrap/dist/js/bootstrap.esm.min.js"></script>
+  <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/App.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+.box-submenu {
+  margin-top: 1rem;
+
+  .box {
+    display: grid;
+    grid-template-columns: 32% 68%;
+    align-items: center;
+
+    .logo {
+      h5 {
+        font-size: 28px;
+        color: $text-primary;
+      }
+    }
+
+    .search-user {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .search {
+        display: flex;
+        align-items: center;
+        width: 60%;
+        background-color: $bg-second;
+        padding: 10px;
+        border-radius: 8px;
+
+        i {
+          margin-right: 8px;
+        }
+
+        input {
+          width: 100%;
+          background-color: $bg-second;
+        }
+      }
+
+      .user-cart {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 10px;
+  
+        span {
+          margin: 0 5px;
+        }
+
+        a {
+          transition: all 700ms ease-in-out;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    i {
+      color: $text-primary;
+      margin-right: 5px;
+    }
+  }
+}

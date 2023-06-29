@@ -1,0 +1,43 @@
+.kits {
+  margin-top: 15px;
+
+  .box {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 5px;
+    align-items: center;
+    font-size: 13px;
+    text-align: center;
+
+    .kit {
+      padding: 8px;
+      background-color: $bg-second;
+      border-radius: 20px;
+      cursor: pointer;
+
+      span {
+        margin: 0 5px;
+        a {
+          font-weight: bold;
+        }
+      }
+
+      i {
+        color: $text-primary;
+        font-size: 14px;
+      }
+
+      &.active {
+        background-color: $text-primary;
+        
+        a {
+          color: $text-one;
+        }
+
+        i {
+          color: $text-one;
+        }
+      }
+    }
+  }
+}

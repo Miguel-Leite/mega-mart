@@ -1,0 +1,263 @@
+{% extends "layout.njk" %}
+{% block head %}
+  <title>MegaMart</title>
+{% endblock %}
+
+{% block content %}
+
+  <div class="box-submenu">
+    <div class="container container-xl">
+      <div class="box">
+        <div class="logo">
+          <h5>MegaMart</h5>
+        </div>
+
+        <div class="search-user">
+            <div class="search">
+              <i class="fa fa-search" aria-hidden="true"></i>
+              <input 
+                type="text"
+                placeholder="Faça pesquisa de produtos"
+              >
+            </div>
+
+            <div class="user-cart">
+              <div class="login-logout">
+                <i class="fa fa-user-o" aria-hidden="true"></i>
+                <a href="/login">Entrar</a>
+                <span>/</span>
+                <a href="/createAccount">Cadastrar-se</a>
+              </div>
+
+              <span>|</span>
+
+              <div class="carrinho">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <a href="/cart">Carrinho</a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="line"></div>
+
+  <div class="kits">
+    <div class="container">
+      <div class="box">
+        <div class="kit active">
+          <span>
+            <a href="/casa">Casa</a>
+          </span>
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </div>
+
+        <div class="kit">
+          <span>
+            <a href="/cozinha">Cozinha</a>
+          </span>
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </div>
+
+        <div class="kit">
+          <span>
+            <a href="/smartphones">Smartphones</a>
+          </span>
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </div>
+
+        <div class="kit">
+          <span>
+            <a href="/smartwatchs">Smartwatchs</a>
+          </span>
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </div>
+
+        <div class="kit">
+          <span>
+            <a href="/smartTv">SmartTV</a>  
+          </span>
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </div>
+
+        <div class="kit">
+          <span>
+            <a href="/pcs">PC's</a>
+          </span>
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </div>
+
+        <div class="kit">
+          <span>
+            <a href="/gym">Esports & Gym</a>
+          </span>
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </div>
+
+        <div class="kit">
+          <span>
+            <a href="/sala">Sala</a>
+          </span>
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="line"></div>
+
+  <div class="carousel">
+    <div class="container">
+      <div class="box">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/laptops.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/mouses.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/smartphone.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-smartphone">
+    <div class="container">
+      <div class="show-title">
+        <div class="title">
+          <h3>
+          O <span>Smartphone</span> ideal para você!
+          </h3>
+          
+          <div class="more">
+            <h6><a href="/smartphones">Ver todos</a></h6>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </div>
+        </div><!-- end title-->
+
+        <div class="line-decoration">
+          <div class="line-blue"></div>
+        </div>
+
+        <div class="gallery-smartphone">
+          <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <img src="img/smartphones/01.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Galaxy S22 Ultra</h5>
+                    <div class="info">
+                      <div class="price">
+                        <p class="price-active">680.000kz</p>
+                        <p class="price-deprecated">700.000kz</p>
+                      </div>
+                      <div class="carrinho">
+                        <button class="btn btn-primary">Adicionar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="img/smartphones/02.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Galaxy M13</h5>
+                    <div class="info">
+                      <div class="price">
+                        <p class="price-active">300.400kz</p>
+                        <p class="price-deprecated">400.000kz</p>
+                      </div>
+                      <div class="carrinho">
+                        <button class="btn btn-primary">Adicionar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="img/smartphones/03.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Galaxy M33</h5>
+                    <div class="info">
+                      <div class="price">
+                        <p class="price-active">550.000kz</p>
+                        <p class="price-deprecated">590.000kz</p>
+                      </div>
+                      <div class="carrinho">
+                        <button class="btn btn-primary">Adicionar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div><!-- end show smartphone -->
+
+        <div class="title">
+          <h3>
+          Top <span>categorias</span> de produtos!
+          </h3>
+          
+          <div class="more">
+            <h6><a href="/categorias">Ver todos</a></h6>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </div>
+        </div><!-- end title-->
+
+        <div class="line-decoration">
+          <div class="line-blue"></div>
+        </div>
+
+        <div class="categorias-produtos">
+          <div class="box">
+            <div class="product">
+              <img src="" alt="...">
+              <p class="text"></p>
+            </div>
+            <div class="product">
+              <img src="" alt="...">
+              <p class="text"></p>
+            </div>
+            <div class="product">
+              <img src="" alt="...">
+              <p class="text"></p>
+            </div>
+            <div class="product">
+              <img src="" alt="...">
+              <p class="text"></p>
+            </div>
+            <div class="product">
+              <img src="" alt="...">
+              <p class="text"></p>
+            </div>
+            <div class="product">
+              <img src="" alt="...">
+              <p class="text"></p>
+            </div>
+          </div>
+        </div>  
+
+      </div><!-- end show title -->
+    </div>
+  </div>
+  
+{% endblock %}
