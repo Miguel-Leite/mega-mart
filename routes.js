@@ -46,6 +46,10 @@ routes.get('/polityc', (request, response) => {
   return response.render('polityc')
 })
 
+routes.get('/forgot', (request, response) => {
+  return response.render('forgot')
+})
+
 // acessos as categorias
 routes.get('/casa', (request, response) => {
   return response.render('home/casa')

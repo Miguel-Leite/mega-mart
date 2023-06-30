@@ -2,4 +2,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  width: 50%;
+  margin: 0 auto;
+  background-color: $bg-final;
+  color: $text-second;
+  font-weight: bold;
+  border: 1px solid $bg-primary;
+  box-shadow: 2px 2px 2px $text-second;
+
+  .form {
+    label, button {
+      text-transform: uppercase;
+    }
+  }
 }
