@@ -1,0 +1,32 @@
+{% extends "layout.auth.njk" %}
+
+{% block content %}
+  <div class="container">
+    <div class="box-form">
+      <h4>Entrar</h4>
+      <form class="form" action="/login" method="post">
+        <label for="email">E-mail</label>
+        <input 
+          type="email" 
+          name="email" 
+          id="email"
+          placeholder="Digite seu email"
+        >
+
+        <label for="email">Senha</label>
+        <input 
+          type="password" 
+          name="password" 
+          id="password"
+          placeholder="Digite sua senha"
+        >
+
+        <button type="submit">Entrar</button>
+        <div class="option">
+          <h5><a href="/createAccount">Registre-se</a></h5>
+          <h5><a href="/forgot">Esqueci a senha</a></h5>
+        </div>
+      </form>
+    </div>
+  </div>
+{% endblock %}

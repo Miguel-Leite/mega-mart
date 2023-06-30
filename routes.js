@@ -18,8 +18,8 @@ routes.get('/brindes', (request, response) => {
   return response.render('brindes')
 })
 
-routes.get('/login', (request, response) => {
-  return response.render('login')
+routes.get('/auth', (request, response) => {
+  return response.render('auth')
 })
 
 routes.get('/createAccount', (request, response) => {
